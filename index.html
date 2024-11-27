@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body class="w-full h-svh bg-[url('./src/images/loginBackground.jpg')] bg-center bg-no-repeat bg-cover">
+    <section class="bg-black bg-opacity-50 w-full h-screen">
+        <header class="w-full h-auto">
+            <img id="logoNetflix" class="w-48 h-auto ps-4" src="./src/images/netflixLogo.png" alt="">
+        </header>
+        <section class="w-full h-auto flex justify-center">
+            <form id="formLogin" class="w-96 h-auto bg-black bg-opacity-60 px-10 py-3 flex flex-col gap-2" onsubmit="event.preventDefault(); sendData();">
+                <div class="w-full h-auto font-bold">
+                    <h1 class="text-3xl text-white">Inicia Sesión</h1>
+                </div>  
+
+                <div class="w-full h-auto flex flex-col gap-3">
+                    <input id="user" class="rounded px-2 py-3 bg-transparent border-gray-500 border text-white" type="text" placeholder="Email o número de celular" required>
+                    <input id="passwd" class="rounded px-2 py-3 bg-transparent border-gray-500 border text-white" type="text" placeholder="Contraseña" required>
+                </div>
+
+                <div class="w-full h-auto">
+                    <button class="w-full rounded p-2 bg-red-600 text-white font-medium">Inicar Sesión</button>
+                </div>
+
+                <span class="text-white text-center">O</span>
+
+                <div class="w-full h-auto">
+                    <button onclick="sendData()" class="w-full h-auto p-2 rounded bg-gray-600 bg-opacity-50 text-center text-white font-medium">Inicar Sesión</button>
+                </div>
+
+                <p class="w-full h-auto text-center">
+                    <span class="text-white">¿Olvidastes la contraseña?</span>
+                </p>
+
+                <div class="w-full h-auto">
+                    <input class="w-4 h-auto" type="checkbox">
+                    <label class="text-white">Recuérdame</label>
+                </div>
+
+                <p class="w-full h-auto">
+                    <span class="text-gray-400">¿Primera vez en Netflix?</span>
+                    <a href="./views/Suscribe.html">
+                        <span class="text-white font-medium">Suscribéte ahora.</span>
+                    </a>
+                    <span class="text-gray-400 text-xs font-normal">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. Más info.</span>
+                </p>
+            </form>
+        </section>
+    </section>
+<script src="./src/animations/logoSlide.js"></script>
+<script src="./apis/login.js"></script>
+</body>
+</html>

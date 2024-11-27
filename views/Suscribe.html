@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribéte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+        .semiluna-div::after {
+            content: "";
+            position: absolute;
+            bottom: -4rem; /* Ajusta según el tamaño de la semiluna */
+            left: 0;
+            width: 100%;
+            height: 6rem;
+            border: 1px solid white;
+            border-bottom: none;
+            background-color: transparent; /* Mismo color que el div */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="w-full h-auto bg-black px-7">
+    <!-- header -->
+    <header class="w-full h-auto flex justify-between">
+        <!-- logo container -->
+        <div class="w-auto h-auto">
+            <img class="w-48 h-auto" src="../src/images/netflixLogo.png" alt="">
+        </div>
+
+        <!-- buttons container -->
+        <div class="w-auto h-auto flex gap-2 items-center justify-center">
+            <select class="w-auto h-auto text-white bg-transparent rounded-3xl border px-5 py-1" aria-placeholder="Español">
+                <option value="">Español</option>
+                <option value="">Ingles</option>
+            </select>
+            <button class="w-auto h-auto text-black bg-white text-sm px-4 py-1 rounded-3xl">Iniciar Sesión</button>
+        </div>
+    </header>
+
+    <!-- slider container -->
+    <section>
+
+    </section>
+</body>
+</html>
